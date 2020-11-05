@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Employee Management </title>   
+        <script language="javascript" src="C:\Users\ADMIN\Desktop\UITask2\main.js"></script>
+        <link rel="stylesheet" href="C:\Users\ADMIN\Desktop\UITask2\main.css">       
+    </head>
+    <body>
+        <div class="container">
+            <h1>Employee Management</h1>
+            <div id="addDeletebuttons">
+            <input id="delete" type="button" value="-Delete " onclick="deleteEmployee('employee')" /> 
+            <input id="addnew" type="button" value="+Add New" onclick="addNewEmployee('employee')" />
+            </div>       
+            <br><br>
+        <table id="employee">
+            <tr>
+                <td><h3>Select</h3></td>
+                <td><h3>First Name</h3></td>
+                <td><h3>Last Name</h3></td>
+                <td><h3>Employee Age</h3></td> 
+                <td><h3>Employee Id </h3></td>
+                <td><h3>Identification Type</h3></td>
+                <td><h3>Identification Value</h3></td>
+                <td><h3>Actions</h3></td>
+            </tr>
+            <tr id="readOnly">
+                <td><input type="checkbox" name="chk"/></td>
+                <td> <input type="text"/> </td>
+                <td> <input type="text"/> </td>
+                <td> <input type="text"/> </td>
+                <td> <input type="text"/> </td>
+                <td><select name="idType">
+                        <option value="">-----Select------</option>
+                        <option value="adhaar">Adhaar</option>
+                        <option value="passport">Passport</option>
+                        <option value="voterid">Voter Id</option>
+                        <option value="driving">Driving Licence</option>
+                    </select> 
+                </td>
+                <td> <input type="text"/> </td>
+                <td> <input type="button" value="Edit" onclick="editEmployee('employee')"/></td>
+
+            </tr>
+        </table>
+        </div>
+    </body>
+</html>
